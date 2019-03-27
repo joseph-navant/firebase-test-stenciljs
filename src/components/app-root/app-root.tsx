@@ -1,10 +1,16 @@
 import { Component } from '@stencil/core';
+import { firebaseConfig } from '../../helpers/config';
+import firebase from 'firebase';
 
 @Component({
   tag: 'app-root',
   styleUrl: 'app-root.css'
 })
 export class AppRoot {
+
+  componentWillLoad() {
+    firebase.initializeApp(firebaseConfig);
+  }
 
   render() {
     return (
