@@ -15,7 +15,7 @@
     "headers": [
       {
         "source": "/",
-        "headers": [{"key": "Link", "value": "</build/app.css>;rel=preload;as=style,</build/app/app.l95ef6ni.js>;rel=preload;as=script;crossorigin,</build/app/p0fjb6tq.entry.js>;rel=preload;as=script;crossorigin"}]
+        "headers": [{"key": "Link", "value": "</build/app.css>;rel=preload;as=style,</build/app/app.l95ef6ni.js>;rel=preload;as=script;crossorigin,</build/app/p0fjb6tq.entry.js>;rel=preload;as=script;crossorigin,</build/app/chunk-f54563a4.js>;rel=preload;as=script;crossorigin,</build/app/chunk-ac5648ce.js>;rel=preload;as=script;crossorigin,</build/app/chunk-062907aa.js>;rel=preload;as=script;crossorigin,</build/app/chunk-bb170044.js>;rel=preload;as=script;crossorigin,</build/app/e6ic73fu.entry.js>;rel=preload;as=script;crossorigin"}]
       }
     ]
   }
