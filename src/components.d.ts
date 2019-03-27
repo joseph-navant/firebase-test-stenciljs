@@ -18,17 +18,27 @@ export namespace Components {
 
   interface AppRoot {}
   interface AppRootAttributes extends StencilHTMLAttributes {}
+
+  interface FirebaseFirestore {}
+  interface FirebaseFirestoreAttributes extends StencilHTMLAttributes {}
+
+  interface FirebaseStorage {}
+  interface FirebaseStorageAttributes extends StencilHTMLAttributes {}
 }
 
 declare global {
   interface StencilElementInterfaces {
     'AppHome': Components.AppHome;
     'AppRoot': Components.AppRoot;
+    'FirebaseFirestore': Components.FirebaseFirestore;
+    'FirebaseStorage': Components.FirebaseStorage;
   }
 
   interface StencilIntrinsicElements {
     'app-home': Components.AppHomeAttributes;
     'app-root': Components.AppRootAttributes;
+    'firebase-firestore': Components.FirebaseFirestoreAttributes;
+    'firebase-storage': Components.FirebaseStorageAttributes;
   }
 
 
@@ -44,14 +54,30 @@ declare global {
     new (): HTMLAppRootElement;
   };
 
+  interface HTMLFirebaseFirestoreElement extends Components.FirebaseFirestore, HTMLStencilElement {}
+  var HTMLFirebaseFirestoreElement: {
+    prototype: HTMLFirebaseFirestoreElement;
+    new (): HTMLFirebaseFirestoreElement;
+  };
+
+  interface HTMLFirebaseStorageElement extends Components.FirebaseStorage, HTMLStencilElement {}
+  var HTMLFirebaseStorageElement: {
+    prototype: HTMLFirebaseStorageElement;
+    new (): HTMLFirebaseStorageElement;
+  };
+
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement
     'app-root': HTMLAppRootElement
+    'firebase-firestore': HTMLFirebaseFirestoreElement
+    'firebase-storage': HTMLFirebaseStorageElement
   }
 
   interface ElementTagNameMap {
     'app-home': HTMLAppHomeElement;
     'app-root': HTMLAppRootElement;
+    'firebase-firestore': HTMLFirebaseFirestoreElement;
+    'firebase-storage': HTMLFirebaseStorageElement;
   }
 
 
