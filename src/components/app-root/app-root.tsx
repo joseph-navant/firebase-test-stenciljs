@@ -1,9 +1,6 @@
 import { Component } from '@stencil/core';
 import { firebaseConfig } from '../../helpers/config';
 import firebase from '@firebase/app';
-import '@firebase/auth';
-import '@firebase/firestore';
-import '@firebase/storage';
 
 @Component({
   tag: 'app-root',
@@ -20,6 +17,8 @@ export class AppRoot {
       <ion-app>
         <ion-router useHash={false}>
           <ion-route url="/" component="app-home" />
+          <ion-route url="/firestore" component="firebase-firestore" />
+          <ion-route url="/storage" component="firebase-storage" />
         </ion-router>
         <ion-nav />
       </ion-app>
