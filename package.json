@@ -14,8 +14,8 @@
     "test.watch": "stencil test --spec --e2e --watch"
   },
   "dependencies": {
-    "@ionic/core": "^4.1.2",
-    "firebase": "^5.9.1"
+    "@firebase/app": "^0.3.13",
+    "@ionic/core": "^4.1.2"
   },
   "devDependencies": {
     "@stencil/core": "0.18.0"
