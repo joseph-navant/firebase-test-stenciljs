@@ -15,7 +15,7 @@
     "headers": [
       {
         "source": "/",
-        "headers": [{"key": "Link", "value": "</build/app.css>;rel=preload;as=style,</build/app/app.l95ef6ni.js>;rel=preload;as=script,</build/app/p0fjb6tq.entry.js>;rel=preload;as=script"}]
+        "headers": [{"key": "Link", "value": "</build/app.css>;rel=preload;as=style,</build/app/app.l95ef6ni.js>;rel=preload;as=script;crossorigin,</build/app/p0fjb6tq.entry.js>;rel=preload;as=script;crossorigin"}]
       }
     ]
   }
